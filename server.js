@@ -1,6 +1,6 @@
 const http = require('http');
-const app = require('app1.js');
-const app = require('app.js');
+const app1 = require('./app1');
+const app = require('./app');
 
 const hostname = '172.23.18.80';
 const port = 443;

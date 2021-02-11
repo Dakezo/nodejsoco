@@ -3,10 +3,6 @@ var app = require('express')(),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override');
 
-exports.printMsg = function () {
-    console.log("This is a message from the package. Wiggle Wiggle.")
-}
-
 app.listen(80, ()=>{
     console.log('server is started');
 })
@@ -132,3 +128,8 @@ app.get('*', (req, res)=>{
     console.log('something wrong');
     res.send('Error 404<br>Server not found');
 })
+
+//module.exports = {}
+//exports.printMsg = function () {
+//    console.log("This is a message from the package. Wiggle Wiggle.")
+//}
