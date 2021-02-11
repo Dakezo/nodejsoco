@@ -3,7 +3,7 @@ var app = require('express')(),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override');
 
-app.listen(443, ()=>{
+app.listen(80, ()=>{
     console.log('server is started');
 })
 //extrating body from request

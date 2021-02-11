@@ -5,10 +5,11 @@ var app = require('express')(),
     currentDb ;
 
 // exports.printMsg = function () {
+// exports.printMsg = function () {
 //    console.log("This is a message from the package. Wiggle Wiggle.")
 //}
 
-app.listen(443, ()=>{
+app.listen(80, ()=>{
     console.log('Server is working');
 })
 //extrating body from request
