@@ -4,7 +4,7 @@ var app = require('express')(),
     methodOverride = require('method-override'),
     currentDb ;
 
-exports.printMsg = function () {
+module.exports = {}
 exports.printMsg = function () {
    console.log("This is a message from the package. Wiggle Wiggle.")
 }
