@@ -3,6 +3,10 @@ var app = require('express')(),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override');
 
+exports.printMsg = function () {
+    console.log("This is a message from the package. Wiggle Wiggle.")
+}
+
 app.listen(80, ()=>{
     console.log('server is started');
 })

@@ -4,6 +4,10 @@ var app = require('express')(),
     methodOverride = require('method-override'),
     currentDb ;
 
+exports.printMsg = function () {
+    console.log("This is a message from the package. Wiggle Wiggle.")
+}
+
 app.listen(80, ()=>{
     console.log('Server is working');
 })
