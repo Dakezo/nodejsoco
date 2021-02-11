@@ -8,7 +8,7 @@ exports.printMsg = function () {
     console.log("This is a message from the package. Wiggle Wiggle.")
 }
 
-app.listen(80, ()=>{
+app.listen(3000, ()=>{
     console.log('Server is working');
 })
 //extrating body from request
