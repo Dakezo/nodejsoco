@@ -3,10 +3,15 @@ var app = require('express')(),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override');
 
+module.exports = {}
+exports.printMsg = function () {
+    console.log("This is a message from the package. Wiggle Wiggle.")
+}
+
 app.listen(80, ()=>{
     console.log('server is started');
 })
-//extrating body from request
+//extracting body from request
 app.use(bodyParser.urlencoded({extended : true}));
 // for using put & delete request for html form
 app.use(methodOverride('_method'));
@@ -128,8 +133,3 @@ app.get('*', (req, res)=>{
     console.log('something wrong');
     res.send('Error 404<br>Server not found');
 })
-
-module.exports = {}
-exports.printMsg = function () {
-    console.log("This is a message from the package. Wiggle Wiggle.")
-}
