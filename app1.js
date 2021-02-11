@@ -129,7 +129,7 @@ app.get('*', (req, res)=>{
     res.send('Error 404<br>Server not found');
 })
 
-//module.exports = {}
-//exports.printMsg = function () {
-//    console.log("This is a message from the package. Wiggle Wiggle.")
-//}
+module.exports = {}
+exports.printMsg = function () {
+    console.log("This is a message from the package. Wiggle Wiggle.")
+}
